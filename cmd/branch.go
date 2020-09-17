@@ -36,7 +36,7 @@ var branchCmd = &cobra.Command{
 		}
 		ticket = args[0]
 
-		jiraClientURL := viper.GetString("url")
+		jiraClientURL := viper.GetString("jiraurl")
 		username := viper.GetString("username")
 		token := viper.GetString("password")
 		if len(jiraClientURL) == 0 {

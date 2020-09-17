@@ -21,7 +21,8 @@ open $HOME/.goya.yaml
 
 ## example config
 ```
-url: https://my.jira.com
+jiraurl: https://my.jira.com
+bitbucketurl: https://bitbucket.org/repo/Demo
 username: your_username
 password: your_password/api_token
 clipboard: true # copy commit message to clipboard
@@ -43,4 +44,7 @@ $ goya commit PROJ-1235
 
 # try to get ticket from current branch, get informations about ticket and formats a commit message to stdout or clipboard (.goya.yaml)
 $ goya commit 
+
+# open create pr page for the current branch in you default webbrowser
+$ goya pr 
 ```

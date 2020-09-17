@@ -54,7 +54,7 @@ var commitCmd = &cobra.Command{
 
 		ticket = strings.ToUpper(ticket)
 
-		jiraClientURL := viper.GetString("url")
+		jiraClientURL := viper.GetString("jiraurl")
 		username := viper.GetString("username")
 		token := viper.GetString("password")
 		if len(jiraClientURL) == 0 {
